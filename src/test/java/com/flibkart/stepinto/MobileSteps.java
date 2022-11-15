@@ -83,6 +83,7 @@ public class MobileSteps {
 	@Then("user receives confirmation message")
 	public void user_receives_confirmation_message() {
 		driver.close();
+		driver.quit();
 		}
 	
 	

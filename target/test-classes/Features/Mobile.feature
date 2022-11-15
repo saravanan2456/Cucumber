@@ -17,7 +17,6 @@
 ## (Comments)
 #Sample Feature Definition Template
 Feature: Mobile
-
 Background:
 Given user login to flipkart
 
