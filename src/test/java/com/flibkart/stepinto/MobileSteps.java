@@ -74,7 +74,7 @@ public class MobileSteps {
 		js.executeScript("arguments[0].scrollIntoView(true)", buy);
 		String buynow=buy.getText();
 		 Thread.sleep(3000);
-	    buy.click();
+	 // buy.click();
 //	    WebElement input= driver.findElement(By.xpath("//button[@type='button']"));
 //	    input.findElement(By.xpath("//input[@class='_2IX_2- _17N0em']")).click();
 	    Assert.assertEquals("BUY NOW", buynow);
@@ -82,8 +82,7 @@ public class MobileSteps {
 
 	@Then("user receives confirmation message")
 	public void user_receives_confirmation_message() {
-		driver.close();
-		driver.quit();
+	driver.quit();
 		}
 	
 	

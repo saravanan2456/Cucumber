@@ -16,46 +16,40 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-Feature: Mobile
+Feature: Tv
 Background:
 Given user login to flipkart
 
-#Scenario: Mobile purchage
-#Given user login to flipkart
-#When user search mobile
-#And user choose the mobile
+#Scenario: Tv purchage
+#When user search Tv
+#And user choose the Tv
 #And user doing payment by using UPI
 #Then user receives confirmation message
 #
-#Scenario: Mobile purchage
-#Given user login to flipkart
-#When user search mobile by using oneD list
+#Scenario: Tv purchage
+#When user search Tv by using oneD list
 #|realme|redme|poco|
-#And user choose the mobile
+#And user choose the Tv
 #And user doing payment by using UPI
 #Then user receives confirmation message
 #
-#Scenario: Mobile purchage
-#Given user login to flipkart
-#When user search mobile by using oneD map
-#|phone1|realme|
-#|phone2|redme|
-#|phone3|poco|
-#And user choose the mobile
+#Scenario: Tv purchage
+#When user search Tv by using oneD map
+#|Tv1|MI tv|
+#|Tv2|samsung tv|
+#|Tv3|readmi tv|
+#And user choose the Tv
 #And user doing payment by using UPI
 #Then user receives confirmation message
-#
-Scenario Outline: Mobile purchage
-Given user login to flipkart
-When user search mobile "<phone>"
-And user choose the mobile
+
+Scenario Outline: Tv purchage
+When user search Tv "<tv>"
+And user choose the Tv
 And user doing payment by using UPI
 Then user receives confirmation message
 Examples:
-|phone|
-|realme|
-|redme|
-|poco|
-
-
+|tv|
+|MI tv|
+|samsung tv|
+|readmi tv|
  

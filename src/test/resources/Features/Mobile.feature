@@ -20,33 +20,33 @@ Feature: Mobile
 Background:
 Given user login to flipkart
 
-Scenario: Mobile purchage
+#Scenario: Mobile purchage
 #Given user login to flipkart
-When user search mobile
-And user choose the mobile
-And user doing payment by using UPI
-Then user receives confirmation message
-
-Scenario: Mobile purchage
+#When user search mobile
+#And user choose the mobile
+#And user doing payment by using UPI
+#Then user receives confirmation message
+#
+#Scenario: Mobile purchage
 #Given user login to flipkart
-When user search mobile by using oneD list
-|realme|redme|poco|
-And user choose the mobile
-And user doing payment by using UPI
-Then user receives confirmation message
-
-Scenario: Mobile purchage
+#When user search mobile by using oneD list
+#|realme|redme|poco|
+#And user choose the mobile
+#And user doing payment by using UPI
+#Then user receives confirmation message
+#
+#Scenario: Mobile purchage
 #Given user login to flipkart
-When user search mobile by using oneD map
-|phone1|realme|
-|phone2|redme|
-|phone3|poco|
-And user choose the mobile
-And user doing payment by using UPI
-Then user receives confirmation message
-
+#When user search mobile by using oneD map
+#|phone1|realme|
+#|phone2|redme|
+#|phone3|poco|
+#And user choose the mobile
+#And user doing payment by using UPI
+#Then user receives confirmation message
+#
 Scenario Outline: Mobile purchage
-#Given user login to flipkart
+Given user login to flipkart
 When user search mobile "<phone>"
 And user choose the mobile
 And user doing payment by using UPI
